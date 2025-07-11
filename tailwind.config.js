@@ -9,11 +9,12 @@ export const theme = {
       'background-main': 'url("../assets/images/background-main.jpg")',
     },
     colors: {
+      'primary': '#baa360',
       'second': '#181C21',
-      'main': '#BAA360',
     },
     fontFamily: {
-      roboto: ['Roboto', 'sans-serif'],
+      chevrola: ['chevrola', 'sans-serif'],
+      poppins: ['Poppins', 'sans-serif'],
     },
   },
 };
