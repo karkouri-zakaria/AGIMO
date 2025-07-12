@@ -193,7 +193,7 @@
                     </div>
                     <!-- Image 6 -->
                     <div class="w-1/4 flex-shrink-0 px-2 flex items-center justify-center">
-                        <img src="https://press.asus.com/assets/w_640,h_640/90767418-95b3-4934-b729-d5a6b1e97bd3/ROG-logo-white.png" alt="Image 6" class="h-16 w-36 object-contain">
+                        <img src="https://www.pbs.org/wgbh/masterpiece/wp-content/themes/masterpiece_s/images/logo-spotify-white.png" alt="Image 6" class="h-16 w-36 object-contain">
                     </div>
                     <!-- Image 7 -->
                     <div class="w-1/4 flex-shrink-0 px-2 flex items-center justify-center">
@@ -952,7 +952,7 @@
                         </div>
                         <div class="text-center">
                             <span class="inline-flex items-center text-lg font-semibold text-green-600 group-hover:text-green-700">
-                                📱 Contacter maintenant
+                                Contacter maintenant
                                 <svg class="w-5 h-5 ml-2 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
                                 </svg>
@@ -977,7 +977,7 @@
                         </div>
                         <div class="text-center">
                             <span class="inline-flex items-center text-lg font-semibold text-primary group-hover:text-yellow-600">
-                                📞 Appeler maintenant
+                                Appeler maintenant
                                 <svg class="w-5 h-5 ml-2 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
                                 </svg>
@@ -992,7 +992,7 @@
                 <div class="absolute inset-0 bg-white rounded-3xl transform rotate-1"></div>
                 <a href="https://wa.me/2126XXXXXXXX" class="relative block bg-second text-white px-12 py-6 rounded-3xl font-bold text-xl hover:bg-gray-800 transform hover:-translate-y-1 transition-all duration-300 shadow-2xl hover:shadow-3xl">
                     <span class="flex items-center justify-center">
-                        📅 Planifier une visite guidée
+                        Planifier une visite guidée
                         <svg class="w-6 h-6 ml-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
                         </svg>
