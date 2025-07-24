@@ -1,0 +1,165 @@
+/* src/styles.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    @font-face {
+      font-family: 'chevrola';
+      src: local('chevrola'),
+           url('../assets/fonts/CHEVROLA.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+    }
+}
+
+@layer components {
+  .svg-animation {
+    animation: fadeInScale 1s ease-out;
+  }
+  
+  /* Default state for all paths - hidden initially */
+  .svg-animation path {
+    opacity: 0;
+    animation: fadeInPath 0.8s ease-out forwards;
+    animation-delay: calc(var(--i, 0) * 0.03s);
+    animation-fill-mode: forwards;
+  }
+  
+  /* Paths with stroke get drawing animation */
+  .svg-animation path[stroke]:not([fill="white"]) {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: drawPathForward 1.2s ease-out forwards;
+    animation-delay: calc(var(--i, 0) * 0.03s);
+    animation-fill-mode: forwards;
+  }
+  
+  .svg-animation path:nth-child(1) { --i: 1; }
+  .svg-animation path:nth-child(2) { --i: 2; }
+  .svg-animation path:nth-child(3) { --i: 3; }
+  .svg-animation path:nth-child(4) { --i: 4; }
+  .svg-animation path:nth-child(5) { --i: 5; }
+  .svg-animation path:nth-child(6) { --i: 6; }
+  .svg-animation path:nth-child(7) { --i: 7; }
+  .svg-animation path:nth-child(8) { --i: 8; }
+  .svg-animation path:nth-child(9) { --i: 9; }
+  .svg-animation path:nth-child(10) { --i: 10; }
+  .svg-animation path:nth-child(11) { --i: 11; }
+  .svg-animation path:nth-child(12) { --i: 12; }
+  .svg-animation path:nth-child(13) { --i: 13; }
+  .svg-animation path:nth-child(14) { --i: 14; }
+  .svg-animation path:nth-child(15) { --i: 15; }
+  .svg-animation path:nth-child(16) { --i: 16; }
+  .svg-animation path:nth-child(17) { --i: 17; }
+  .svg-animation path:nth-child(18) { --i: 18; }
+  .svg-animation path:nth-child(19) { --i: 19; }
+  .svg-animation path:nth-child(20) { --i: 20; }
+  .svg-animation path:nth-child(21) { --i: 21; }
+  .svg-animation path:nth-child(22) { --i: 22; }
+  .svg-animation path:nth-child(23) { --i: 23; }
+  .svg-animation path:nth-child(24) { --i: 24; }
+  .svg-animation path:nth-child(25) { --i: 25; }
+  .svg-animation path:nth-child(26) { --i: 26; }
+  .svg-animation path:nth-child(27) { --i: 27; }
+  .svg-animation path:nth-child(28) { --i: 28; }
+  .svg-animation path:nth-child(29) { --i: 29; }
+  .svg-animation path:nth-child(30) { --i: 30; }
+
+  /* Filled paths get a simple fade-in animation */
+  .svg-animation path[fill="white"] {
+    stroke-dasharray: none;
+    stroke-dashoffset: 0;
+    opacity: 0;
+    animation: fadeInFill 0.8s ease-out forwards;
+    animation-delay: calc(var(--i, 0) * 0.03s + 0.5s);
+    animation-fill-mode: forwards;
+  }
+
+  /* Ensure all paths remain visible after animation */
+  .svg-animation.animate-svg path {
+    opacity: 1 !important;
+  }
+
+  /* Override any conflicting styles after animation completes */
+  .svg-animation[style*="--animation-complete"] path {
+    opacity: 1 !important;
+    stroke-dashoffset: 0 !important;
+    animation: none !important;
+  }
+}
+
+@keyframes fadeInScale {
+  0% {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeInPath {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes drawPath {
+  0% {
+    stroke-dashoffset: 1000;
+    opacity: 0;
+  }
+  5% {
+    opacity: 1;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes drawPathForward {
+  0% {
+    stroke-dashoffset: 1000;
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInFill {
+  0% {
+    opacity: 0;
+    transform: scale(0.98);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Hover effects for interactive elements */
+.svg-animation:hover {
+  animation: breathe 4s ease-in-out infinite;
+}
+
+@keyframes breathe {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.02);
+  }
+}
+  
+  
