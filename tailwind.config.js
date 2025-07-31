@@ -10,7 +10,7 @@ export const theme = {
     },
     colors: {
       'primary': '#baa360',
-      'second': '#181C21',
+      'secondary': '#181C21',
     },
     fontFamily: {
       chevrola: ['chevrola', 'sans-serif'],
